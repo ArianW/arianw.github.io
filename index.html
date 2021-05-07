@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html lang="en" >
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <link rel="icon" type="image/ico" href="favicon.ico">
@@ -13,9 +13,11 @@
   <meta charset="UTF-8">
   <title>Arian</title>
   <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <title>CodePen - NEON LOVE</title>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
-
 <body oncontextmenu="return false;" unselectable="on" onselectstart="return false;">
     <title>Arian</title>
     <audio id="audio" preload="" autoplay="" loop="">
@@ -66,7 +68,7 @@
             /* Opera */
         }
         
-        ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢&#128;
+        ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢&#128;
         &#139;
         @keyframes fadein {
             from {
@@ -110,7 +112,7 @@
 
     <div class="center">
         <center>
-            <p><font face="Impact">ARIAN</font>
+            <p><font face="Impact" color="ffffff">ARIAN</font>
             </p>
             <div style="letter-spacing: 3;font-size: 15;">
                 <div id="center">
@@ -120,9 +122,9 @@
 
                     <div class="animated fadeInUp">
 
-                       <font size="5" <pre><pre align="middle"><a href="https://steamcommunity.com/id/IceCube1302" "="" target="_blank">STEAM /</a> <a href="https://t.me/arian_4777" target="_blank">TELEGRAM /</a> <a href="https://vk.com/0x656" target="_blank">VK</a></pre></pre></font>
+                       <font size="5" color="ffffff" <pre><pre align="middle"><a href="https://steamcommunity.com/id/IceCube1302" "="" target="_blank">STEAM /</a> <a href="https://t.me/arian_4777" target="_blank">TELEGRAM /</a> <a href="https://vk.com/0x656" target="_blank">VK</a></pre></pre></font>
                         <center>
-                           <font size="4"><div id="clockDisplay" class="clockStyle">09:44:37 PM</div></font>
+                           <font size="4" color="ffffff"><div id="clockDisplay" class="clockStyle">09:44:37 PM</div></font>
                         </center>
                         <script>
                             function renderTime() {
@@ -158,7 +160,7 @@
 
             </div>
             <br>
-		<div id="pp" style="cursor: pointer; letter-spacing: 5px; font-size: 16px;" onclick="pVid();">play/pause</div>
+		<font color="ffffff"><div id="pp" style="cursor: pointer; letter-spacing: 5px; font-size: 16px;" onclick="pVid();">play/pause</div></font>
         </center>
     </div>
     <script type="text/javascript">
@@ -279,46 +281,12 @@
             window.setInterval(doInverseSpinZeroPitch, 150);
         });
     </script>
-	<!-- partial:index.partial.html -->	
-<canvas id="webgl-canvas"></canvas>
-
-<!-- vertexShader -->
-<script id="js-vertex-shader" type="x-shader/x-vertex">
-attribute vec3 position;
-
-void main()	{
-  gl_Position = vec4(position, 1.0);
-}
-</script>
-
-<!-- fragmentShader -->
-<script id="js-fragment-shader" type="x-shader/x-fragment">
-precision highp float;
-uniform vec2 resolution;
-uniform float time;
-uniform float xScale;
-uniform float yScale;
-uniform float distortion;
-
-void main() {
-  vec2 p = (gl_FragCoord.xy * 2.0 - resolution) / min(resolution.x, resolution.y);
-  
-  float d = length(p) * distortion;
-  
-  float rx = p.x * (1.0 + d);
-  float gx = p.x;
-  float bx = p.x * (1.0 - d);
-
-  float r = 0.05 / abs(p.y + sin((rx + time) * xScale) * yScale);
-  float g = 0.05 / abs(p.y + sin((gx + time) * xScale) * yScale);
-  float b = 0.05 / abs(p.y + sin((bx + time) * xScale) * yScale);
-  
-  gl_FragColor = vec4(r, g, b, 1.0);
-}
-</script>
+<!-- partial:index.partial.html -->
+<body>
+  <canvas id="canvas" width="1400" height="600"></canvas>
+</body>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js'></script><script  src="./script.js"></script>
+  <script  src="./script.js"></script>
 
 </body>
 </html>
