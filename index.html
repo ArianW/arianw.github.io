@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+	<style>
+        p {
+            font-size: 40px;
+            margin: 0;
+            letter-spacing: 6px;
+        }
+    </style>
+  <meta charset="UTF-8">
+  <title>Arian</title>
+  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <title>CodePen - NEON LOVE</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body oncontextmenu="return false;" unselectable="on" onselectstart="return false;">
+    <title>Arian</title>
+    <audio id="audio" preload="" autoplay="" loop="">
+        <source type="audio/mp3" src="music.mp3">
+    </audio>
+    <script type="text/javascript">
+        window.onkeydown = function(evt) {
+            if (evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 17 || evt.keyCode == 16 || evt.keyCode == 74 || evt.keyCode == 116 || evt.keyCode == 73) return false;
+        };
+
+        window.onkeypress = function(evt) {
+            if (evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 17 || evt.keyCode == 16 || evt.keyCode == 74 || evt.keyCode == 116 || evt.keyCode == 73) return false;
+        };
+
+        function disableF5(e) {
+            if ((e.which || e.keyCode) == 116) e.preventDefault();
+        };
+        $(document).on("keydown", disableF5);
+    </script>
+    <style>
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none !important;
+        }
+        
+        .center {
+            font-family: 'Montserrat', sans-serif;
+            position: fixed;
+            /* or absolute */
+            top: 50%;
+            left: 50%;
+            /* bring your own prefixes */
+            transform: translate(-50%, -50%);
+            animation: fadein 3s;
+            -moz-animation: fadein 3s;
+            /* Firefox */
+            -webkit-animation: fadein 3s;
+            /* Safari and Chrome */
+            -o-animation: fadein 3s;
+            /* Opera */
+        }
+        
+        ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢&#128;
+        &#139;
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes fadein {
+            /* Firefox */
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @-webkit-keyframes fadein {
+            /* Safari and Chrome */
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @-o-keyframes fadein {
+            /* Opera */
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <div class="center">
+        <center>
+            <p><font face="Impact" color="ffffff">ARIAN</font>
+            </p>
+            <div style="letter-spacing: 3;font-size: 15;">
+                <div id="center">
+                    <div class="animated fadeInDown">
+
+                    </div>
+
+                    <div class="animated fadeInUp">
+
+                       <font size="5" color="ffffff" <pre><pre align="middle"><a href="https://steamcommunity.com/id/IceCube1302" "="" target="_blank">STEAM /</a> <a href="https://t.me/arian_4777" target="_blank">TELEGRAM /</a> <a href="https://vk.com/0x656" target="_blank">VK</a></pre></pre></font>
+                        <center>
+                           <font size="4" color="ffffff"><div id="clockDisplay" class="clockStyle">09:44:37 PM</div></font>
+                        </center>
+                        <script>
+                            function renderTime() {
+                                var currentTime = new Date();
+                                var diem = "AM";
+                                var h = currentTime.getHours();
+                                var m = currentTime.getMinutes();
+                                var s = currentTime.getSeconds();
+                                setTimeout('renderTime()', 1000);
+                                if (h == 0) {
+                                    h = 12;
+                                } else if (h > 12) {
+                                    h = h - 12;
+                                    diem = "PM";
+                                }
+                                if (h < 10) {
+                                    h = "0" + h;
+                                }
+                                if (m < 10) {
+                                    m = "0" + m;
+                                }
+                                if (s < 10) {
+                                    s = "0" + s;
+                                }
+                                var myClock = document.getElementById('clockDisplay');
+                                myClock.textContent = h + ":" + m + ":" + s + " " + diem;
+                                myClock.innerText = h + ":" + m + ":" + s + " " + diem;
+                            }
+                            renderTime();
+                        </script>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+		<font color="ffffff"><div id="pp" style="cursor: pointer; letter-spacing: 5px; font-size: 16px;" onclick="pVid();">play/pause</div></font>
+        </center>
+    </div>
+    <script type="text/javascript">
+        var audio = document.getElementById("audio");
+
+        function pVid() {
+            audio.paused ? audio.play() : audio.pause();
+        }
+    </script>
+	</script>
+    <script type='text/javascript'>
+        function kill_ctrl_key_combo(e) {
+            var forbiddenKeys = new Array('a', 'c', 'x', 's', 'u');
+            var key;
+            var isCtrl;
+            if (window.event) {
+                key = window.event.keyCode;
+                if (window.event.ctrlKey) isCtrl = true;
+                else isCtrl = false;
+            } else {
+                key = e.which;
+                if (e.ctrlKey) isCtrl = true;
+                else isCtrl = false;
+            }
+			
+            //if ctrl is pressed check if other key is in forbidenKeys array
+            if (isCtrl) {
+                for (i = 0; i < forbiddenKeys.length; i++) { //case-insensitive comparation
+                    if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                        window.open("", "_self");
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        function disable_selection(target) {
+            if (typeof target.style.MozUserSelect != "undefined") {
+                target.style.MozUserSelect = "none";
+            }
+            target.style.cursor = "default";
+        }
+
+        function enable_protection() {
+            disable_selection(document.body); //These will disable selection on the page
+            document.captureEvents(Event.MOUSEDOWN);
+            document.onmousedown = double_mouse; //These will disable double mouse on the page
+            document.oncontextmenu = function() {
+                return false;
+            }; //These will disable right click on the page
+            document.onkeydown = kill_ctrl_key_combo;
+        }
+
+        window.onload = function() { //These will enable protection on the page
+            enable_protection();
+        };
+    </script>
+
+    <script>
+        /*function check(e)
+            {
+            alert(e.keyCode);
+            }*/
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) { //Alt+c, Alt+v will also be disabled sadly.
+                window.open("", "_self");
+            }
+            return false;
+        };
+    </script>
+    <script>
+        $(document).keydown(function(event) {
+            if (event.keyCode == 123) {
+                window.open("", "_self");
+                return false;
+
+            } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                window.open("", "_self");
+                return false;
+
+            }
+        });
+
+        $(document).on("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    </script>
+    <script type="text/javascript">
+        document.ondragstart = noselect;
+        document.onselectstart = noselect;    
+        document.oncontextmenu = noselect;
+
+        function noselect() {
+            return false;
+        }
+    </script>
+    <script>
+        $(function() {
+            var title = document.title,
+                animSeq = ["/", "-", "\\", "|", "-"],
+                animIndex = 0,
+                titleIndex = 0;
+
+            function doInverseSpinZeroPitch() {
+                var loadTitle = title.substring(0, titleIndex);
+                if (titleIndex > title.length) {
+                    animIndex = 0;
+                    titleIndex = 0
+                }
+                if (animIndex > 3) {
+                    titleIndex++;
+                    animIndex = 0
+                }
+                document.title = loadTitle + animSeq[animIndex];
+                animIndex++
+            }
+            window.setInterval(doInverseSpinZeroPitch, 150);
+        });
+    </script>
+<!-- partial:index.partial.html -->
+<body>
+  <canvas id="canvas" width="1400" height="600"></canvas>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
